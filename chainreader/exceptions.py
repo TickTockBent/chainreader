@@ -1,5 +1,7 @@
 """Custom exceptions for ChainReader"""
 
+from __future__ import annotations
+
 
 class ChainReaderError(Exception):
     """Base exception for all ChainReader errors"""

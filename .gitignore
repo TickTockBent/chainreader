@@ -77,3 +77,6 @@ chainreader_cache.db
 # Environment variables
 .env
 .env.local
+
+# PyPI credentials
+.pypirc

@@ -1,10 +1,12 @@
 """Pytest configuration and shared fixtures"""
 
+from typing import Union
+
 import pytest
 
 
 @pytest.fixture
-def sample_providers() -> list[dict[str, str | int]]:
+def sample_providers() -> list[dict[str, Union[str, int]]]:
     """Sample provider configurations for testing"""
     return [
         {"name": "provider1", "url": "https://rpc1.example.com", "priority": 1},

@@ -14,7 +14,7 @@ Thank you for your interest in contributing to ChainReader! This document provid
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/chainreader.git
+   git clone https://github.com/TickTockBent/chainreader.git
    cd chainreader
    ```
 

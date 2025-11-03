@@ -1,5 +1,7 @@
 """ChainReader - Main public API for blockchain data access"""
 
+from __future__ import annotations
+
 import logging
 from typing import Any
 
@@ -271,7 +273,7 @@ class ChainReader:
         """Clear all cached data"""
         self.cache_manager.clear()
 
-    async def __aenter__(self) -> "ChainReader":
+    async def __aenter__(self) -> ChainReader:
         """Async context manager entry"""
         return self
 

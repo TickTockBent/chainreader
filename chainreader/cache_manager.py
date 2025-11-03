@@ -1,5 +1,7 @@
 """Cache Manager for intelligent caching of blockchain data"""
 
+from __future__ import annotations
+
 import hashlib
 import json
 import logging

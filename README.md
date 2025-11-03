@@ -1,7 +1,7 @@
 # ChainReader
 
-[![CI](https://github.com/yourusername/chainreader/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/chainreader/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/yourusername/chainreader/branch/main/graph/badge.svg)](https://codecov.io/gh/yourusername/chainreader)
+[![CI](https://github.com/TickTockBent/chainreader/actions/workflows/ci.yml/badge.svg)](https://github.com/TickTockBent/chainreader/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/TickTockBent/chainreader/branch/main/graph/badge.svg)](https://codecov.io/gh/TickTockBent/chainreader)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -220,7 +220,7 @@ See the [examples](examples/) directory for complete examples:
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/chainreader.git
+git clone https://github.com/TickTockBent/chainreader.git
 cd chainreader
 
 # Install with dev dependencies
@@ -326,13 +326,3 @@ Contributions are welcome! Areas where we'd love help:
 ## License
 
 MIT License - Free for commercial and personal use.
-
-## Acknowledgments
-
-Built for use in:
-- [Candlemark](https://github.com/yourusername/candlemark) - Prediction market dApp
-- [Dodona Oracles](https://github.com/yourusername/dodona) - Trading bot infrastructure
-
----
-
-**Note**: This is a Phase 1 release. Features like SQLite/Redis caching, request batching, and rate limiting are planned for future releases.
