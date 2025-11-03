@@ -1,5 +1,7 @@
 """Request Handler for optimized request execution with caching and retries"""
 
+from __future__ import annotations
+
 import logging
 import time
 from typing import Any

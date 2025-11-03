@@ -45,10 +45,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/chainreader"
-Documentation = "https://github.com/yourusername/chainreader#readme"
-Repository = "https://github.com/yourusername/chainreader"
-Issues = "https://github.com/yourusername/chainreader/issues"
+Homepage = "https://github.com/TickTockBent/chainreader"
+Documentation = "https://github.com/TickTockBent/chainreader#readme"
+Repository = "https://github.com/TickTockBent/chainreader"
+Issues = "https://github.com/TickTockBent/chainreader/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]

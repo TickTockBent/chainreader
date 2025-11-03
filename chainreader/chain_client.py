@@ -1,5 +1,7 @@
 """Chain Client for EVM blockchain interactions using Web3.py"""
 
+from __future__ import annotations
+
 import logging
 from typing import Any
 

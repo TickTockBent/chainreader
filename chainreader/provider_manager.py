@@ -1,5 +1,7 @@
 """Provider Manager for handling multiple RPC providers with failover and health tracking"""
 
+from __future__ import annotations
+
 import logging
 import time
 from dataclasses import dataclass, field
