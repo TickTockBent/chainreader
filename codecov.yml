@@ -1,0 +1,19 @@
+coverage:
+  status:
+    project:
+      default:
+        target: 60%  # Start with current coverage, increase gradually
+        threshold: 1%  # Allow 1% decrease
+    patch:
+      default:
+        target: 70%  # New code should have higher coverage
+
+comment:
+  layout: "reach,diff,flags,tree,footer"
+  behavior: default
+  require_changes: false
+
+ignore:
+  - "tests/"
+  - "examples/"
+  - "**/__init__.py"

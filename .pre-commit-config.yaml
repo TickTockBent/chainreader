@@ -1,0 +1,48 @@
+repos:
+  # Code formatting
+  - repo: https://github.com/psf/black
+    rev: 24.10.0
+    hooks:
+      - id: black
+
+  # Linting
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.0
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+
+  # Type checking (allow to fail for now, just warn)
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.13.0
+    hooks:
+      - id: mypy
+        additional_dependencies:
+          - types-aiofiles
+        files: ^chainreader/
+        args: [--ignore-missing-imports, --python-version=3.10]
+        verbose: true
+
+  # General code quality
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+      - id: check-json
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: debug-statements
+
+  # Run tests
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        entry: bash -c 'if command -v pytest &> /dev/null; then pytest tests/ --tb=short, -q --cov=chainreader --cov-fail-under=60; else echo "pytest not found, skipping tests"; fi'
+        language: system
+        pass_filenames: false
+        always_run: true

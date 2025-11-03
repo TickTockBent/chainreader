@@ -1,0 +1,1 @@
+"""ChainReader test suite"""
